@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --f1: "Ubuntu", sans-serif;
+    --f2: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    font-family: var(--f2);
+
+    .logo {
+        font-size: 1.5rem;
+        font-family: var(--f1);
+        font-weight: 500;
+    }
+
+    ul {
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+
+        li {
+            padding: .4rem .8rem;
+            border-radius: 50px;
+
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        .active {
+            border: 1px solid #dadada;
+        }
+
+    }
+
+    .btn-h {
+        background-color: #0d1a2d;
+        border: none;
+    }
+
+}
+
+.btn {
+    padding: .7rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid #ababab;
+    font-family: var(--f1);
+    color: #fff;
+    font-weight: 100;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.section1 {
+    height: 100vh;
+    width: 100%;
+    // background-color: red;
+    display: grid;
+    align-self: stretch;
+    padding: 0 2rem;
+
+    .banner {
+        border-radius: 1rem;
+        background: linear-gradient(#ffffff00, #00000025), url(../assets/banner.webp);
+        background-position: top;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        .top {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            text-align: center;
+            font-family: var(--f1);
+            position: relative;
+            bottom: 4.5rem;
+
+            h1 {
+                font-size: 3.5rem;
+                color: #fff;
+                font-weight: 300;
+            }
+
+            p {
+                font-family: 1.5rem;
+                color: #fff;
+                font-weight: 400;
+                padding: 1rem 0;
+                width: 70%;
+            }
+
+            button {
+                background-color: #0d1a2d;
+                border: none;
+            }
+        }
+
+        .bottom-left {
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+
+            display: flex;
+
+            p {
+                font-size: 1.1rem;
+                font-family: var(--f1);
+                color: #fff;
+                width: 16rem;
+            }
+
+            .img-con {
+                display: flex;
+                padding: 0.3rem 0 0.3rem 0.5rem;
+                background: #ffffff46;
+                border-radius: 16px;
+                box-shadow: 0 4px 30px #ff43431a;
+                backdrop-filter: blur(3.8px);
+                -webkit-backdrop-filter: blur(3.8px);
+                border-radius: 5rem;
+
+                .cir {
+                    height: 40px;
+                    width: 40px;
+                    background-color: red;
+                    border-radius: 10rem;
+                    background-position: top left;
+                    background-size: cover;
+                    position: relative;
+                    cursor: pointer;
+                }
+
+                .cir:nth-child(1) {
+                    background-image: url(https://i.pinimg.com/736x/ea/d6/a1/ead6a196edb297faadbe1989d5ce6b2f.jpg);
+                    left: 0;
+                }
+
+                .cir:nth-child(2) {
+                    background-image: url(https://i.pinimg.com/736x/a7/2e/af/a72eafcda8e981ebc32889895817f2e6.jpg);
+                    left: -5px;
+                }
+
+                .cir:nth-child(3) {
+                    background-image: url(https://i.pinimg.com/1200x/66/0c/e1/660ce120f76f3c8f3251dd318debb119.jpg);
+                    left: -10px;
+                }
+            }
+        }
+
+        .bottom-right {
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+
+            a {
+                color: #fff;
+                font-family: var(--f1);
+                margin-left: 1rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.titel {
+    font-size: 2rem;
+    font-family: var(--f1);
+
+    .highlight {
+        color: #dadada8b;
+    }
+}
+
+.section2 {
+    padding: 4rem 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--f1);
+
+
+
+    .titel {
+        font-size: 1.5rem;
+
+    }
+}
+
+.tag-b {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    padding: 0.5rem .95rem;
+    font-size: .95rem;
+    border-radius: 1rem;
+    font-size: .75rem;
+    cursor: pointer;
+}
+
+.section3 {
+    .card-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem;
+
+        .card {
+            height: 300px;
+            width: 400px;
+            flex-grow: 1;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+
+            i {
+                font-size: 2.5rem;
+                color: #fff;
+            }
+
+            .titel {
+                font-size: 1.5rem;
+                font-family: var(--f1);
+                margin-top: .5rem;
+                color: #fff;
+            }
+
+            .dc {
+                margin-bottom: 2rem;
+
+            }
+        }
+
+        .card:nth-child(1) {
+            background-color: #0d1a2d;
+
+        }
+
+        .card:nth-child(2) {
+            background-image: url(https://img.freepik.com/premium-photo/muscular-athletic-guy-training-sport-success-male-fitness-fashion-sportsman-sky-background_474717-178.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 0 6rem;
+
+
+        }
+
+        .card:nth-child(3) {
+            background-color: #f6f8fc;
+            font-family: var(--f2);
+
+            .titel {
+                font-size: 3.5rem;
+                color: #0d1a2d;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #0d1a2d;
+                margin: .5rem 0 .3rem 0;
+            }
+
+            span {
+                font-size: .85rem;
+                color: #3b3b3b;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+.btn-h {
+    background: #ffffff2b;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid #ffffff30;
+    transition: all .25s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+        scale: 1.1;
+    }
+
+    &:active {
+        scale: 1;
+    }
+}
+
+#graph {
+
+    display: flex;
+    flex-flow: column;
+    gap: .5rem;
+
+    .data-a {
+        display: flex;
+        justify-content: space-between;
+
+        .marge {
+            display: flex;
+
+            .text {
+                width: 9rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    $hw: 15px;
+
+    .graph {
+        display: flex;
+        gap: .5rem;
+        // margin-left: 1rem;
+
+        .cir {
+            height: $hw;
+            width: $hw;
+            border-radius: 1rem;
+            background-color: #2196F3;
+        }
+
+        .cir-d {
+            height: $hw;
+            width: $hw;
+            border-radius: 1rem;
+            background-color: #2195f300;
+        }
+    }
+}
+
+.switch-con {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 55px;
+        height: 27px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        box-shadow: inset 0 0 0 .3rem #ffffff;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .mode-text {
+        color: white;
+        margin-left: 10px;
+        vertical-align: top;
+        line-height: 34px;
+        font-family: var(--f1);
+        font-weight: 100;
+    }
+
+
+}
+
+.section4 {
+    padding: 1rem 0 2.5rem;
+    border-bottom: 1px solid #dadada;
+
+    .titel {
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .dt-card {
+        display: flex;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+
+        .dt-c {
+            flex-grow: 1;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: .35rem;
+
+            p {
+                font-size: 3rem;
+                font-family: var(--f1);
+            }
+
+            span {
+                font-size: 1rem;
+                font-family: var(--f1);
+                color: #4f4f4f;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.section5 {
+    padding: 4rem 1rem;
+    font-family: var(--f1);
+
+    .card-um {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .card-u {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            width: 300px;
+            border-radius: 1.5rem;
+
+            .tag {
+                margin-bottom: 1.5rem;
+                cursor: pointer;
+            }
+
+            .titel {
+                font-size: 1.3rem;
+                margin-bottom: 2rem;
+                font-weight: 400;
+            }
+
+            .btn {
+                padding: 0.5rem .95rem;
+                font-size: .75rem;
+                background: #ffffff2b;
+                border-radius: 16px;
+                box-shadow: 0 4px 30px #0000001a;
+                backdrop-filter: blur(7px);
+                -webkit-backdrop-filter: blur(7px);
+                border: 1px solid #ffffff30;
+                color: #000000;
+
+            }
+
+            .btn-h {
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                background-color: #0d1a2d;
+                border: none;
+                box-shadow: none;
+                color: #ffffff;
+            }
+        }
+
+        .card-u:nth-child(2) {
+            background-image: url(https://img.freepik.com/free-photo/female-tennis-player-tennis-court_1303-23218.jpg?semt=ais_hybrid&w=740&q=80);
+            background-position: top;
+            background-size: cover;
+            padding: 2rem 2rem 1rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+
+            .tag {
+                .btn {
+                    color: #fff;
+                }
+            }
+
+            .bottom {
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+
+                margin-bottom: 1rem;
+
+                .titel {
+                    font-size: 1.5rem;
+                    margin: 0;
+                    color: #fff;
+                    padding-right: 20px;
+                }
+
+                $bt-hw: 40px;
+
+                .btn {
+                    color: #fff;
+                    padding: 0;
+                    border-radius: 5rem;
+                    height: $bt-hw;
+                    width: $bt-hw+12;
+
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+
+            }
+        }
+
+        .card-u:nth-child(3) {
+            // padding: 0rem 2rem 1rem;
+            align-items: stretch;
+            justify-content: space-between;
+
+            .img {
+                padding: 2rem;
+                border-radius: 1rem;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2MneMNgXYm9onli-B-_cNTNXdyXxBnHi5qUORv21uB7wZ5Ep6);
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+
+                .tag {
+                    .btn {
+
+                        color: #ffffff;
+                    }
+                }
+
+                .titel {
+                    margin-bottom: 0;
+                    color: #ffffff;
+                }
+
+
+            }
+
+            .bottom {
+                p {
+                    font-size: 1.5rem;
+                    margin-top: 1rem;
+                }
+
+                .slide {
+                    margin-top: 1rem;
+                    $a: 40px;
+                    display: flex;
+                    gap: .3rem;
+
+                    .btn {
+                        height: $a;
+                        width: $a;
+                        padding: 0;
+                        border-radius: 2rem;
+                        font-size: 1rem;
+                        background-color: transparent;
+                        color: #000;
+                        border: 1px solid #dadada;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --f1: "Ubuntu", sans-serif;
+  --f2: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  font-family: var(--f2);
+}
+nav .logo {
+  font-size: 1.5rem;
+  font-family: var(--f1);
+  font-weight: 500;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-weight: 300;
+  cursor: pointer;
+}
+nav ul .active {
+  border: 1px solid #dadada;
+}
+nav .btn-h {
+  background-color: #0d1a2d;
+  border: none;
+}
+
+.btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #ababab;
+  font-family: var(--f1);
+  color: #fff;
+  font-weight: 100;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.section1 {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-self: stretch;
+  padding: 0 2rem;
+}
+.section1 .banner {
+  border-radius: 1rem;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1450980392)), url(../assets/banner.webp);
+  background-position: top;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.section1 .banner .top {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  font-family: var(--f1);
+  position: relative;
+  bottom: 4.5rem;
+}
+.section1 .banner .top h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 300;
+}
+.section1 .banner .top p {
+  font-family: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  padding: 1rem 0;
+  width: 70%;
+}
+.section1 .banner .top button {
+  background-color: #0d1a2d;
+  border: none;
+}
+.section1 .banner .bottom-left {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  display: flex;
+}
+.section1 .banner .bottom-left p {
+  font-size: 1.1rem;
+  font-family: var(--f1);
+  color: #fff;
+  width: 16rem;
+}
+.section1 .banner .bottom-left .img-con {
+  display: flex;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+  background: rgba(255, 255, 255, 0.2745098039);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 67, 67, 0.1019607843);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border-radius: 5rem;
+}
+.section1 .banner .bottom-left .img-con .cir {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  border-radius: 10rem;
+  background-position: top left;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.section1 .banner .bottom-left .img-con .cir:nth-child(1) {
+  background-image: url(https://i.pinimg.com/736x/ea/d6/a1/ead6a196edb297faadbe1989d5ce6b2f.jpg);
+  left: 0;
+}
+.section1 .banner .bottom-left .img-con .cir:nth-child(2) {
+  background-image: url(https://i.pinimg.com/736x/a7/2e/af/a72eafcda8e981ebc32889895817f2e6.jpg);
+  left: -5px;
+}
+.section1 .banner .bottom-left .img-con .cir:nth-child(3) {
+  background-image: url(https://i.pinimg.com/1200x/66/0c/e1/660ce120f76f3c8f3251dd318debb119.jpg);
+  left: -10px;
+}
+.section1 .banner .bottom-right {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.section1 .banner .bottom-right a {
+  color: #fff;
+  font-family: var(--f1);
+  margin-left: 1rem;
+  font-weight: 100;
+}
+
+.titel {
+  font-size: 2rem;
+  font-family: var(--f1);
+}
+.titel .highlight {
+  color: rgba(218, 218, 218, 0.5450980392);
+}
+
+.section2 {
+  padding: 4rem 3rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: var(--f1);
+}
+.section2 .titel {
+  font-size: 1.5rem;
+}
+
+.tag-b {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #d8d8d8;
+  padding: 0.5rem 0.95rem;
+  font-size: 0.95rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.section3 .card-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+.section3 .card-con .card {
+  height: 300px;
+  width: 400px;
+  flex-grow: 1;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.section3 .card-con .card i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.section3 .card-con .card .titel {
+  font-size: 1.5rem;
+  font-family: var(--f1);
+  margin-top: 0.5rem;
+  color: #fff;
+}
+.section3 .card-con .card .dc {
+  margin-bottom: 2rem;
+}
+.section3 .card-con .card:nth-child(1) {
+  background-color: #0d1a2d;
+}
+.section3 .card-con .card:nth-child(2) {
+  background-image: url(https://img.freepik.com/premium-photo/muscular-athletic-guy-training-sport-success-male-fitness-fashion-sportsman-sky-background_474717-178.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0 6rem;
+}
+.section3 .card-con .card:nth-child(3) {
+  background-color: #f6f8fc;
+  font-family: var(--f2);
+}
+.section3 .card-con .card:nth-child(3) .titel {
+  font-size: 3.5rem;
+  color: #0d1a2d;
+}
+.section3 .card-con .card:nth-child(3) p {
+  font-size: 1rem;
+  color: #0d1a2d;
+  margin: 0.5rem 0 0.3rem 0;
+}
+.section3 .card-con .card:nth-child(3) span {
+  font-size: 0.85rem;
+  color: #3b3b3b;
+  font-weight: 200;
+}
+
+.btn-h {
+  background: rgba(255, 255, 255, 0.168627451);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1019607843);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.1882352941);
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn-h:hover {
+  scale: 1.1;
+}
+.btn-h:active {
+  scale: 1;
+}
+
+#graph {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+#graph .data-a {
+  display: flex;
+  justify-content: space-between;
+}
+#graph .data-a .marge {
+  display: flex;
+}
+#graph .data-a .marge .text {
+  width: 9rem;
+  font-weight: 500;
+}
+#graph .graph {
+  display: flex;
+  gap: 0.5rem;
+}
+#graph .graph .cir {
+  height: 15px;
+  width: 15px;
+  border-radius: 1rem;
+  background-color: #2196F3;
+}
+#graph .graph .cir-d {
+  height: 15px;
+  width: 15px;
+  border-radius: 1rem;
+  background-color: rgba(33, 149, 243, 0);
+}
+
+.switch-con {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  /* Rounded sliders */
+}
+.switch-con .switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 27px;
+}
+.switch-con .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch-con .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.switch-con .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  box-shadow: inset 0 0 0 0.3rem #ffffff;
+  transition: 0.4s;
+}
+.switch-con input:checked + .slider {
+  background-color: #2196F3;
+}
+.switch-con input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.switch-con input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.switch-con .slider.round {
+  border-radius: 34px;
+}
+.switch-con .slider.round:before {
+  border-radius: 50%;
+}
+.switch-con .mode-text {
+  color: white;
+  margin-left: 10px;
+  vertical-align: top;
+  line-height: 34px;
+  font-family: var(--f1);
+  font-weight: 100;
+}
+
+.section4 {
+  padding: 1rem 0 2.5rem;
+  border-bottom: 1px solid #dadada;
+}
+.section4 .titel {
+  text-align: center;
+  font-weight: 300;
+}
+.section4 .dt-card {
+  display: flex;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+.section4 .dt-card .dt-c {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+.section4 .dt-card .dt-c p {
+  font-size: 3rem;
+  font-family: var(--f1);
+}
+.section4 .dt-card .dt-c span {
+  font-size: 1rem;
+  font-family: var(--f1);
+  color: #4f4f4f;
+  font-weight: 400;
+}
+
+.section5 {
+  padding: 4rem 1rem;
+  font-family: var(--f1);
+}
+.section5 .card-um {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.section5 .card-um .card-u {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  width: 300px;
+  border-radius: 1.5rem;
+}
+.section5 .card-um .card-u .tag {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.section5 .card-um .card-u .titel {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.section5 .card-um .card-u .btn {
+  padding: 0.5rem 0.95rem;
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.168627451);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1019607843);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.1882352941);
+  color: #000000;
+}
+.section5 .card-um .card-u .btn-h {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background-color: #0d1a2d;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+}
+.section5 .card-um .card-u:nth-child(2) {
+  background-image: url(https://img.freepik.com/free-photo/female-tennis-player-tennis-court_1303-23218.jpg?semt=ais_hybrid&w=740&q=80);
+  background-position: top;
+  background-size: cover;
+  padding: 2rem 2rem 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.section5 .card-um .card-u:nth-child(2) .tag .btn {
+  color: #fff;
+}
+.section5 .card-um .card-u:nth-child(2) .bottom {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.section5 .card-um .card-u:nth-child(2) .bottom .titel {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+  padding-right: 20px;
+}
+.section5 .card-um .card-u:nth-child(2) .bottom .btn {
+  color: #fff;
+  padding: 0;
+  border-radius: 5rem;
+  height: 40px;
+  width: 52px;
+}
+.section5 .card-um .card-u:nth-child(2) .bottom .btn i {
+  font-size: 1.5rem;
+}
+.section5 .card-um .card-u:nth-child(3) {
+  align-items: stretch;
+  justify-content: space-between;
+}
+.section5 .card-um .card-u:nth-child(3) .img {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2MneMNgXYm9onli-B-_cNTNXdyXxBnHi5qUORv21uB7wZ5Ep6);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.section5 .card-um .card-u:nth-child(3) .img .tag .btn {
+  color: #ffffff;
+}
+.section5 .card-um .card-u:nth-child(3) .img .titel {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.section5 .card-um .card-u:nth-child(3) .bottom p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.section5 .card-um .card-u:nth-child(3) .bottom .slide {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.3rem;
+}
+.section5 .card-um .card-u:nth-child(3) .bottom .slide .btn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #dadada;
+}/*# sourceMappingURL=index.css.map */
