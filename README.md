@@ -8,9 +8,7 @@ A modern, performance-focused tennis club website built with **React** and **Vit
 ## Live Preview
 
 🌐 **Local Development Preview**  
-`http://localhost:5173`
-
-*Deploy-ready for Vercel / Netlify*
+[`https://horizonzoon.vercel.app/`](https://horizonzoon.vercel.app/)
 
 ---
 
