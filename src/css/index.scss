@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
 :root {
     --f1: "Ubuntu", sans-serif;
     --f2: "Outfit", sans-serif;
